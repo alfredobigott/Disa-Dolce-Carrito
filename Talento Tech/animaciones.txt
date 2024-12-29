@@ -1,0 +1,7 @@
+animaciones: 
+amp while scrolling.
+nav recogido while scroll
+fix image while scrolling
+transparente nav mientras bajo
+botón de puntuación
+bordes punteados de footer o nav

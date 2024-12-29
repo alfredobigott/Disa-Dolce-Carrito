@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*funcion de suma numeros primos*/
+        function sumaPrimos(n) {
+            let suma = 0;
+            for (let i = 2; i <= n; i++) {
+                if (isPrime(i)) {
+                    suma += i;
+                }
+            }
+            return suma;
+        }
+        
+        /*funcion de verificacion si un numero es primo*/
+        function isPrime(num) {
+            if (num <= 1) {
+                return false;
+            }
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+        /*mostrar la suma de los primeros 100 numeros primos*/
+        let sumaPrimos100 = sumaPrimos(100);
+        console.log("La suma de los primeros 100 números primos es: " + sumaPrimos100);
+        /*mostrar la suma de los primeros 1000 numeros primos*/
+        let sumaPrimos1000 = sumaPrimos(1000);
+        console.log("La suma de los primeros 1000 números primos es: " + sumaPrimos1000);
+    </script>
+</body>
+</html>
